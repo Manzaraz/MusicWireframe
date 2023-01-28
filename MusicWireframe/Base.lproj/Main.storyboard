@@ -55,6 +55,10 @@
                                         <state key="normal" image="backward.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchedDownInside:" destination="BYZ-38-t0r" eventType="touchDown" id="ZmB-G6-42a"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="74k-OU-dGh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Bt-sF-Yxf">
                                         <rect key="frame" x="115.00000000000001" y="0.0" width="42.666666666666671" height="46.666666666666664"/>
@@ -69,6 +73,8 @@
                                         </state>
                                         <connections>
                                             <action selector="playPauseButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="cdR-lQ-BhH"/>
+                                            <action selector="touchedDownInside:" destination="BYZ-38-t0r" eventType="touchDown" id="Fjd-nT-KV5"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ti-f5-BJ7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R44-vr-Vhm">
@@ -79,6 +85,10 @@
                                         <state key="normal" image="forward.fill" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchedDownInside:" destination="BYZ-38-t0r" eventType="touchDown" id="YQa-t7-pzK"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ha8-sh-KW7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

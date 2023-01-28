@@ -60,5 +60,50 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.0
+            sender.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+        }
+    }
+    
+    @IBAction func touchedDownInside(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.3
+            sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
+        
+    }
+    
+    
+    
+    
+    
 }
 
